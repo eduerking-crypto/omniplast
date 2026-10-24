@@ -87,6 +87,20 @@ python scripts/qa_navegador.py   # Playwright: 22 páginas, cero excepciones (co
 
 Estado verificado en este repositorio: **17/17 tests · 100/100 agentes (97 ok, 3 requieren insumos externos por diseño) · 22/22 páginas sin excepciones · 0 errores JS**.
 
+## En la nube y por link público
+
+| Qué | Cómo |
+|---|---|
+| **Código (GitHub)** | https://github.com/eduerking-crypto/omniplast |
+| **App por link público** | Doble clic en `nube.bat` → abre un **Cloudflare Tunnel** (HTTPS) hacia `localhost:8787` y muestra tu link `https://xxx.trycloudflare.com` |
+
+Por qué un túnel y no un deploy "serverless": OMNIPLAST es un proceso Python vivo (Streamlit + WebSockets + SQLite), que **no puede ejecutarse en Workers/Pages de Cloudflare**; la vía oficial de Cloudflare para exponer este tipo de apps es **Cloudflare Tunnel**, que publica tu máquina con HTTPS y sin abrir puertos.
+
+Condiciones del link rápido (`trycloudflare.com`, sin cuenta):
+- La app corre **en tu PC**: debe estar encendido y con `nube.bat` activo.
+- La URL es **aleatoria y cambia** al reiniciar el túnel (guárdala en `data/link_publico.txt`).
+- Cualquiera con el link puede ver la app con los **datos demo sintéticos**; para datos reales sensibles usa un **túnel con nombre + Cloudflare Access** (dash.cloudflare.com → Zero Trust → Tunnels, con el mismo `tools/cloudflared.exe`): URL fija con tu dominio y login.
+
 ## Créditos normativos y científicos principales
 
 Hartmann et al. (2019) · GESAMP (2019) · Koelmans et al. (2019) · Hakanson (1980) · Tomlinson et al. (1980) · Lithner et al. (2011) · Brown et al. (1970) · Carlson (1977) · Anderson (2001) · Beliaeff & Burgeot (2002) · Yoshida et al. (2016) · Zettler et al. (2013) · Bustin et al. (2009, MIQE) · Borja et al. (2000) · Roldán (2003, BMWP-Col) · Biermann et al. (2020) · OMS (2019) · Reglamento (UE) 2024/1448.

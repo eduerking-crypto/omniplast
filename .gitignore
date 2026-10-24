@@ -6,6 +6,9 @@ data/omniplast.db
 data/cache/
 data/exports/
 data/qa/
+data/tunnel_log.txt
+data/tunnel_err.txt
+data/link_publico.txt
 tools/
 *.log
 .DS_Store
