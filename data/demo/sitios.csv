@@ -1,0 +1,11 @@
+﻿id,codigo,nombre,lat,lon,zona,descripcion
+1,JPC-01,Canal Juan Polo (descarga urbana),10.4238,-75.5091,impacto,Estación JPC-01 — zona impacto
+2,JPC-02,Canal Juan Polo medio,10.4285,-75.506,impacto,Estación JPC-02 — zona impacto
+3,VIR-01,Sector La Esperanza,10.4182,-75.501,impacto,Estación VIR-01 — zona impacto
+4,TUR-01,Borde de manglar Turbana,10.4098,-75.5012,transicion,Estación TUR-01 — zona transicion
+5,TUR-02,Turbana sur,10.4052,-75.5077,transicion,Estación TUR-02 — zona transicion
+6,MED-01,Centro lagunar,10.4308,-75.4953,referencia_interna,Estación MED-01 — zona referencia_interna
+7,MED-02,Norte centro,10.4402,-75.4918,referencia_interna,Estación MED-02 — zona referencia_interna
+8,NOR-01,Sector norte,10.4521,-75.4945,referencia_interna,Estación NOR-01 — zona referencia_interna
+9,NOR-02,Punta norte,10.4577,-75.4902,transicion,Estación NOR-02 — zona transicion
+10,REF-01,Boca marina (referencia externa),10.465,-75.476,referencia,Estación REF-01 — zona referencia
